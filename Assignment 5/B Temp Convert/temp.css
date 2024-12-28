@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: bisque;
+}
+.converter {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.converter input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+.converter button {
+    padding: 8px;
+    background-color: #d31f43;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.converter button:hover {
+    background-color: #371fbc;
+}
+.result {
+    margin-top: 10px;
+    font-weight: bold;
+}
