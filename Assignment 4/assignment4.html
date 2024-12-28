@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 - Open Modal Window</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<h1>ASSIGNMENT 4</h1>
+<body>
+    <div class="container text-center mt-5">
+        <!-- Box 1 -->
+        <div class="box" data-bs-toggle="modal" data-bs-target="#modalOne">
+            <img src="ussteel.png" alt="Image 1">
+            <div class="box-description">US Steel produces and sells steel products.<br><br>Click here for more information.</div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="box" data-bs-toggle="modal" data-bs-target="#modalTwo">
+            <img src="bechtel.png" alt="Image 2">
+            <div class="box-description">Bechtel is an American engineering/project management company.<br><br>Click here for more information.</div>
+        </div>
+    </div>
+
+    <!-- Modal One -->
+    <div class="modal fade" id="modalOne" tabindex="-1" aria-labelledby="modalOneLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalOneLabel">US Steel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img class="modal-image" src="steel.jpg" alt="Image 1" onclick="toggleDescription('descOne')">
+                    <p>From our beginnings, we have made the steel that built America. U. S. Steel's diverse products literally formed the foundation of rapid physical and economic growth throughout the 20th century in cities and small towns across the United States.<br><br>
+
+                        From the first skyscrapers to schools, hospitals and other buildings, to the roads, bridges and rail lines that connect us all, our history—our products and the people who made them—is as embedded in American life as any company operating today.</p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Two -->
+    <div class="modal fade" id="modalTwo" tabindex="-1" aria-labelledby="modalTwoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTwoLabel">BECHTEL</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img class="modal-image" src="bechtel3.jpg" alt="Image 2" onclick="toggleDescription('descTwo')">
+                    <p>Bechtel's business activities began in 1898, when cattle farmer Warren A. Bechtel moved from Peabody, Kansas, to the Oklahoma Territory to construct railroads with his team of mules.<br><br>Bechtel moved his family frequently between construction sites around the western United States for the next several years, eventually moving to Oakland, California, in 1904, where he worked as the superintendent on the Western Pacific Railroad.In 1906, W. A. Bechtel won his first subcontract to build part of the Oroville-to-Oakland section of the Western Pacific Railroad. That year he bought a steam shovel, becoming a pioneer of the new technology. He painted "W.A. Bechtel Co." on the side of the steam shovel, effectively establishing Bechtel as a company, although it was not yet incorporated. Bechtel completed work on a series of railroad contracts during the early 1900s, culminating in an extension of the Northwestern Pacific Railroad finished in 1914.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to toggle the expanded description
+        function toggleDescription(id) {
+            const desc = document.getElementById(id);
+            if (desc.classList.contains('show')) {
+                desc.classList.remove('show');
+            } else {
+                desc.classList.add('show');
+            }
+        }
+    </script>
+</body>
+</html>
