@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Cherri Samuel">
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Guess the Secret Number!</h1>
+    <p id="message">Start guessing...</p>
+    <p id="secret-number" class="hidden">?</p><br><br>
+    <input type="number" id="guess" placeholder="Enter your guess" min="1" max="100">
+    <button id="check">Check</button>
+    <button id="play">Play Again</button>
+    <p>Score: <span id="score">10</span></p>
+    <p>High Score: <span id="high-score">0</span></p>
+    <div class="guess-history" id="guess-history">Guess History: None</div>
+  </div>
+  <img src="guess.jpg" class="gpic">
+  <script src="guess.js"></script>
+</body>
+</html>
