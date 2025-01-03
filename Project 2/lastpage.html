@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stylesocial.css">
+<link rel="stylesheet" href="product.css">
+<link rel="stylesheet" href="pjstyle.css">
+</head>
+
+<body>
+
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        * {
+          box-sizing: border-box;
+        }
+    
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 2px solid rgb(253, 212, 136);
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+    
+        input[type=submit] {
+          background-color: #e39337;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+    
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+    
+        .container {
+          border-radius: 5px;
+          background-color: rgb(255, 231, 188);
+          padding: 20px;
+          max-width: 600px;
+          margin: 0 auto; 
+        }
+      </style>
+    </head>
+    <body>
+    
+    <h3 style="text-align: center;">Contact Us</h3>
+    
+    <div class="container">
+      <form action="thankyou.html" method="post">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name">
+    
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email address" required>
+    
+        <label for="country">State</label>
+        <select id="country" name="country">
+          <option value="stateselect">Select your state</option>
+          <option value="Alabama">Alabama</option>
+          <option value="Alaska">Alaska</option>
+          <option value="California">California</option>
+          <option value="Delaware">Delaware</option>
+          <option value="Indiana">Indiana</option>
+          <option value="Pennsylvania">Pennsylvania</option>
+          <option value="North Carolina">North Carolina</option>
+          <option value="New Mexico">New Mexico</option>
+          <option value="Utah">Utah</option>
+          <option value="Vermont">Vermont</option>
+          <option value="Virginia">Virginia</option>
+          <option value="Wyoming">Wyoming</option>
+          <option value="Other">Other</option>
+        </select>
+    
+        <label for="feedback">What is the reason?</label>
+        <select id="feedback" name="feedback">
+          <option value="positive">I have positive feedback</option>
+          <option value="negative">I have negative feedback</option>
+          <option value="employment">Employment Inquiry</option>
+          <option value="Other">Other</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="We need your feedback.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    
+    <br>
+    <hr>
+    <br>
+    <div class="menu-bar" style="text-align: center;">
+      <a href="project2.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="lastpage.html">Contact</a>
+    </div>
+    <br>
+    <br>
+    
+    <!-- Social Media Buttons -->
+
+    <h2 class="connect">CONNECT WITH JOSEFINA BODY CARE COLLECTION</h2>
+
+        <div class="connect">
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            <a href="https://www.x.com" class="fa fa-twitter"></a>
+            <a href="https://www.google.com" class="fa fa-google"></a>
+            <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+            <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
+        </div>
+<br><br><br><br>
+    </body>
+
+</html> 
