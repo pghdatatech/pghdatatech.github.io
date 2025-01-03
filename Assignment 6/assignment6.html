@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <style>
+            body {
+            background-color: bisque;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            font-family: 'Georgia', serif;
+            flex-direction: column;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(239, 83, 62);
+            margin-bottom: 20px;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px; 
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 6</h1>
+
+    <div class="box">
+        <p>Click on the buttons below to execute the javascript files.</p>
+    
+    <button onclick="loadScript('assignment6a.js')">Load Assignment6a</button>
+    <button onclick="loadScript('assignment6b.js')">Load Assignment6b</button>
+    <button onclick="window.location.href='assignment6d.html';">Go to Assignment6d</button>
+</div>
+    <script>
+        
+        function loadScript(scriptName) {
+            var script = document.createElement('script');
+            script.src = scriptName;
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+        }
+    </script>
+
+</body>
+</html>
